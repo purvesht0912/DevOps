@@ -1,1 +1,10 @@
+stages:
+  - scheduled_job
+
+scheduled_job:
+  stage: scheduled_job
+  script:
+    - echo "Scheduled job executed at $(date)"
+  tags:
+    - runner-tag
 
